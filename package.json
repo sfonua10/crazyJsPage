@@ -1,0 +1,22 @@
+{
+  "name": "crazyjspage",
+  "version": "1.0.0",
+  "description": "a crazy page with basic javascript implementation in the DOM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sfonua10/crazyJsPage.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Saia Fonua",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/sfonua10/crazyJsPage/issues"
+  },
+  "homepage": "https://github.com/sfonua10/crazyJsPage#readme"
+}
