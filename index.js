@@ -7,4 +7,18 @@ function convertToF() {
   document.getElementById("fahrenheit").innerHTML = formulas;
   document.getElementById("celsius").value = '';
 }
+//Convert Celsius to fahrenheit END
 
+//Reverse A String
+function reverseString() {
+  let userInput = document.getElementById('reverseStr').value;
+  let reversedStr = userInput.split("").reverse().join("");
+  document.getElementById("reversedStrResult").innerHTML = reversedStr
+
+}
+document.addEventListener('keydown', e => {
+  if(e.keyCode === 13) {
+    reverseString()
+  }
+})
+//Reverse A String END
