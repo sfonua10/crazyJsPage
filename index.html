@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Saia's Crazy JS Page</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -16,10 +17,23 @@
   <!-- Convert Celsius to Fahrenheit END -->
   <hr />
 
+  <!-- Reverse A String -->
   <h4>Type in string and click to see the reversed string</h4>
   <input type="text" id="reverseStr" placeholder="type in string to reverse" />
   <button onclick="reverseString()">Click</button>
   <h3 id="reversedStrResult"></h3>
+  <!-- Reverse A String END-->
+  <hr />
+
+  <!-- Factorialize A Number -->
+  <h3>Enter a number or pick a random number</h3>
+  <input id="factorializeInput" size="3" onkeydown="factorializeNumber()"/><button onclick="randomizeNumber()">Random #</button>
+  <div class="h1Flex">
+    <h1 id="numToFac"></h1>&nbsp;<h1 id="facNum"></h1>
+  </div>
+  <!-- Factorialize A Number END-->
+
+
   <script src="index.js"></script>
 </body>
 </html>
