@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Saia's Crazy JS Page</title>
-  <link rel="stylesheet" href="index.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Saia's Crazy JS Page</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
-  <!-- Convert Celsius to Fahrenheit -->
-  <h4>Put in number and click button to get fahrenheit</h4>
-  <input type="text" id="celsius" placeholder="input celsius"/>
-  <button onclick="convertToF()">Click It</button>
-  <h3 id="fahrenheit"></h3>
-  <!-- Convert Celsius to Fahrenheit END -->
-  <hr />
+  <body>
+    <!-- Convert Celsius to Fahrenheit -->
+    <h4>Put in number and click button to get fahrenheit</h4>
+    <input type="text" id="celsius" placeholder="input celsius" />
+    <button onclick="convertToF()">Click It</button>
+    <h3 id="fahrenheit"></h3>
+    <!-- Convert Celsius to Fahrenheit END -->
+    <hr />
 
-  <!-- Reverse A String -->
-  <h4>Type in string and click to see the reversed string</h4>
-  <input type="text" id="reverseStr" placeholder="type in string to reverse" />
-  <button onclick="reverseString()">Click</button>
-  <h3 id="reversedStrResult"></h3>
-  <!-- Reverse A String END-->
-  <hr />
+    <!-- Reverse A String -->
+    <h4>Type in string and click to see the reversed string</h4>
+    <input
+      type="text"
+      id="reverseStr"
+      placeholder="type in string to reverse"
+    />
+    <button onclick="reverseString()">Click</button>
+    <h3 id="reversedStrResult"></h3>
+    <!-- Reverse A String END-->
+    <hr />
 
-  <!-- Factorialize A Number -->
-  <h3>Enter a number or pick a random number</h3>
-  <input id="factorializeInput" size="3" onkeydown="factorializeNumber()"/><button onclick="randomizeNumber()">Random #</button>
-  <div class="h1Flex">
-    <h1 id="numToFac"></h1>&nbsp;<h1 id="facNum"></h1>
-  </div>
-  <hr />
-  <!-- Factorialize A Number END-->
+    <!-- Factorialize A Number -->
+    <h3>Enter a number or pick a random number</h3>
+    <input
+      id="factorializeInput"
+      size="3"
+      onkeydown="factorializeNumber()"
+    /><button onclick="randomizeNumber()">Random #</button>
+    <div class="h1Flex">
+      <h1 id="numToFac"></h1>
+      &nbsp;
+      <h1 id="facNum"></h1>
+    </div>
+    <hr />
+    <!-- Factorialize A Number END-->
 
-  <!-- Find Longest Word in a String -->
-  <h3>Enter a sentence and click enter to find the longest word</h3>
-  <textarea id="targetSentence" rows="5" cols="50" placeholder="Enter text"></textarea>
-  <button onclick="findLongestWordLength()">Click</button>
-  <h5 id="outputLongestWord"></h5>
+    <!-- Find Longest Word in a String -->
+    <h3>Enter a sentence and click enter to find the longest word</h3>
+    <textarea
+      id="targetSentence"
+      rows="5"
+      cols="50"
+      placeholder="Enter text"
+    ></textarea>
+    <button onclick="findLongestWordLength()">Click</button>
+    <h5 id="outputLongestWord"></h5>
+    <hr />
+    <!-- Find Longest Word in a String END-->
 
-  <!-- Find Longest Word in a String END-->
-
-  <script src="index.js"></script>
-</body>
+    <!-- Find Longest Word in a String -->
+    <h1>HONG'S VERY OWN MACRO CALCULATOR</h1>
+    <div style="display:grid;grid-template-columns: auto auto auto">
+      <div>Gender: <input id="gender" /></div>
+      <div>Age: <input id="age" /></div>
+      <div>Weight: <input placeholder="lbs" id="weight" /></div>
+      <div>
+        Height:
+        <input size="4" placeholder="ft" id="heightFt" />
+        <input placeholder="in" size="4" id="heightIn" />
+      </div>
+      Exercise Level:
+      <div>
+        <select id="rateOfExercise">
+          <option value="noExercise">None</option>
+          <option value="sedentary">Sedentary (1-3x per week)</option>
+          <option value="moderate">Moderate (3-5 Per Week)</option>
+          <option value="active">Active (6-7 per week)</option>
+          <option value="veryActive">Very Active (7+ per week)</option>
+        </select>
+      </div>
+    </div>
+    <button onclick="calculateMacro()">Calculate</button>
+    <h1 id="macroResult"></h1>
+    <!-- Find Longest Word in a String END-->
+    <script src="index.js"></script>
+  </body>
 </html>
