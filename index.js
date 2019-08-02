@@ -129,3 +129,14 @@ function calculateMacro() {
 
   document.getElementById("macroResult").innerHTML = TDEE;
 }
+
+function titleCase() {
+  const textToTitleCase = document.getElementById('textToTitleCase').value
+  const wordsArr = textToTitleCase.split(" ");
+  const newArr = [];
+  for(let word of wordsArr) {
+    newArr.push(word.slice(0,1).toUpperCase() + word.slice(1).toLowerCase())
+  }
+  const titleCasedSentence = newArr.join(" ")
+  document.getElementById('titleCaseSentence').innerHTML = titleCasedSentence;
+}
