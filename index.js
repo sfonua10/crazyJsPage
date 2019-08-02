@@ -140,3 +140,25 @@ function titleCase() {
   const titleCasedSentence = newArr.join(" ")
   document.getElementById('titleCaseSentence').innerHTML = titleCasedSentence;
 }
+
+
+function getData(){
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res =>  res.json())
+    .then(data => {
+      let output = '<h2>Users</h2>';
+      data.map(user => {
+        output += `
+          <div>
+            ${user.name}
+          </div>
+        `
+      })
+      document.getElementById('myData').innerHTML = output;
+    })
+} 
+
+function playSong() {
+  const audio = document.querySelector('audio');
+  audio.play();
+}
